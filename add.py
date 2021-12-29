@@ -186,6 +186,7 @@ for acc in to_use:
         else:
             c(JoinChannelRequest(scraped_grp))
             print(f'{plus}{grey} User: {cy}{acc_name}{lg} -- Joined group to scrape')
+        userStatusRecently#e26f42f1 = UserStatus
         Shivam = UserStatusRecenty
         scraped_grp_entity = c.get_entity.Shivam(scraped_grp)
         if choice == 0:
