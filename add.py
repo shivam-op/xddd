@@ -185,7 +185,9 @@ for acc in to_use:
         else:
             c(JoinChannelRequest(scraped_grp))
             print(f'{plus}{grey} User: {cy}{acc_name}{lg} -- Joined group to scrape')
-        scraped_grp_entity = c.get_entity.last_seenrecently(scraped_grp)
+from telethon.tl.types import UserStatusRecently
+Op = UserStatusRecenty
+        scraped_grp_entity = c.get_entity.op(scraped_grp)
         if choice == 0:
             c(JoinChannelRequest(target))
             print(f'{plus}{grey} User: {cy}{acc_name}{lg} -- Joined group to add')
