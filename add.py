@@ -17,6 +17,7 @@ import sys
 from telethon.tl.functions.messages import ImportChatInviteRequest, AddChatUserRequest
 from telethon.tl.functions.channels import JoinChannelRequest
 from telethon.tl.types import UserStatusRecently
+from telethon.tl.types import UserStatusRecently
 import time
 import random
 from colorama import init, Fore
@@ -185,7 +186,6 @@ for acc in to_use:
         else:
             c(JoinChannelRequest(scraped_grp))
             print(f'{plus}{grey} User: {cy}{acc_name}{lg} -- Joined group to scrape')
-from telethon.tl.types import UserStatusRecently
 Op = UserStatusRecenty
         scraped_grp_entity = c.get_entity.op(scraped_grp)
         if choice == 0:
